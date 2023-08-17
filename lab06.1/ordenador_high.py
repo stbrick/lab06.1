@@ -16,9 +16,9 @@ class Sorter:
 
     def quick_sort(self, arr, low, high) -> [int]:
         if low < high:
-        pi = particiona(arr, low, high)
-        quick_sort(arr, low, pi - 1)
-        quick_sort(arr, pi + 1, high)
+            pi = particiona(arr, low, high)
+            quick_sort(arr, low, pi - 1)
+            quick_sort(arr, pi + 1, high)
 
     def merge(self, left, right) -> [int]:
         result = []
